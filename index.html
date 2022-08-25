@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Here</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class="row col-md-12 form-group">
+            <h1 class="text-info">Weather Forecast</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <div class="row col-md-12">
+                <!-- Search class used in query selector -->
+                <div class="search row col-md-12 form-group">
+                    <div class="col-md-6 offset-3 d-flex justify-content-center">
+                        <input placeholder="search city" type="text" id="citySearch" />
+                        <button id="cityWeather" class="btn btn-warning"
+                            style="margin-left: 10px; margin-right: 10px;">Search Weather</button>
+                        <h3 id="city0" class="text-info">City: </h3>
+                    </div>
+                </div>
+
+                <div class="row form-group col-md-12">
+                    <div id="cities" class="col-md-2 border border-warning">
+                        <h3>Search History</h3>
+                        <h5 id="history0"></h5>
+                        <h5 id="history1"></h5>
+                        <h5 id="history2"></h5>
+                        <h5 id="history3"></h5>
+                        <h5 id="history4"></h5>
+                    </div>
+                    <div class="col-md-2 border border-warning">
+                        <h3 id="date0">Date: </h3>
+                        <div>
+                            <img id="weatherCondition0" src="http://openweathermap.org/img/wn/10d@4x.png"
+                                alt="current weather icon">
+                        </div>
+                        <h3 id="temp0">Temperature: </h3>
+                        <h3 id="humidity0">Humidity: </h3>
+                        <h3 id="wind0">Wind speeds: </h3>
+                    </div>
+                    <div class="col-md-2 border border-warning">
+                        <h3 id="date1">Date: </h3>
+                        <div>
+                            <dl></dl>
+                            <img id="weatherCondition1" src="http://openweathermap.org/img/wn/10d@4x.png"
+                                alt="current weather icon">
+                        </div>
+                        <h3 id="temp1">Temperature: </h3>
+                        <h3 id="humidity1">Humidity: </h3>
+                        <h3 id="wind1">Wind speeds: </h3>
+                    </div>
+                    <div class="col-md-2 border border-warning">
+                        <h3 id="date2">Date: </h3>
+                        <div>
+                            <img id="weatherCondition2" src="http://openweathermap.org/img/wn/10d@4x.png"
+                                alt="current weather icon">
+                        </div>
+                        <h3 id="temp2">Temperature: </h3>
+                        <h3 id="humidity2">Humidity: </h3>
+                        <h3 id="wind2">Wind speeds: </h3>
+                    </div>
+                    <div class="col-md-2 border border-warning">
+                        <h3 id="date3">Date: </h3>
+                        <div>
+                            <img id="weatherCondition3" src="http://openweathermap.org/img/wn/10d@4x.png"
+                                alt="current weather icon">
+                        </div>
+                        <h3 id="temp3">Temperature: </h3>
+                        <h3 id="humidity3">Humidity: </h3>
+                        <h3 id="wind3">Wind speeds: </h3>
+                    </div>
+                    <div class="col-md-2 border border-warning">
+                        <h3 id="date4">Date: </h3>
+                        <div>
+                            <img id="weatherCondition4" src="http://openweathermap.org/img/wn/10d@4x.png"
+                                alt="current weather icon">
+                        </div>
+                        <h3 id="temp4">Temperature: </h3>
+                        <h3 id="humidity4">Humidity: </h3>
+                        <h3 id="wind4">Wind speeds: </h3>
+                    </div>
+                </div>
+                <div class="row col-md-12">
+                    <div class="col-md-4 offset-4">
+                        <h3 id="uv"></h3>
+                        <div class="border border-3 bg-light">
+                            <h4>UV Danger Level</h4>
+                            <h5 class="bg-success col-4">Low</h5>
+                            <h5 class="bg-warning col-4">Moderate</h5>
+                            <h5 class="bg-danger col-4">High</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
+</html>
