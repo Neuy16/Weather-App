@@ -8,7 +8,7 @@
 
 ## Snippet
 
-![](assets/js/images/weather.PNG)
+![](assets/images/weather.PNG)
 
 
 ## Deployed application link
